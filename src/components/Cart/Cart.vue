@@ -3,11 +3,19 @@
     <router-link
         :to="{name:'Books'}"
     >
-      <div class="books_link_cart">
-        Повернутися до книг
+      <div class="books-link-cart">
+        <i
+            class="material-icons">
+          arrow_back
+        </i>
+        <div>
+          BACK
+        </div>
       </div>
     </router-link>
-    <h1>CART</h1>
+    <div class="basket">
+      <img src="../../assets/image/basket/basket.jpg" alt="">
+    </div>
     <p v-if="!cart_data.length">Кошик порожній...</p>
     <CartItems
         v-for="(item, index) in cart_data"
@@ -18,8 +26,8 @@
         @incrementItem="incrementItem(index)"
     />
     <div class="total">
-      <h4>Total</h4>
-      <p>{{cartTotalConst}}</p>
+      <h4>Всього</h4>
+      <p>{{cartTotalConst}} грн</p>
     </div>
 
   </div>
@@ -79,8 +87,7 @@ export default {
 <style scoped>
 .cart {
   display: grid;
-  grid-template-columns: auto;
-
+  grid-template-columns: 1fr;
   border: 1px solid black;
 }
 .total{
@@ -89,4 +96,24 @@ export default {
   background-color: #42b983;
   color: white;
 }
+.books-link-cart{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  padding: 1em;
+  width: 100px;
+  height: 65px ;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.basket img{
+
+  width: 300px;
+  height: 300px;
+  position: center;
+
+
+}
+
 </style>

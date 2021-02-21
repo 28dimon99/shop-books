@@ -12,8 +12,7 @@
        </div>
 
      </router-link>
-
-     <h1>Book</h1>
+     <h1>КНИГИ</h1>
      <div class="books">
          <BooksItem
                  v-for="book in BOOKS"
@@ -64,16 +63,21 @@
 <style scoped>
     .content{
         display: grid;
+        margin: 0 auto;
+        background-color:cornsilk;
+        padding: 20px 0 40px 0;
     }
 .books{
     display: grid;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 15px;
-    padding: 20px;
+    grid-column-gap: 100px;
+
 }
 .books_link_cart{
   display: grid;
-  border: 1px solid gray;
+  color: white;
+  list-style: none;
   width: 200px;
   position: absolute;
   top:0;

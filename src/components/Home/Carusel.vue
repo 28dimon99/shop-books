@@ -7,7 +7,7 @@
         <button @click.prevent="prev" class="btn btn-prev"><i class="material-icons chevron_right">chevron_right</i></button>
     </div>
     <div class="sidebar">
-        <p>Rbkbmnbmbmbmbmbmbmnbmbmnbvbvcbcbvcvbc</p>
+        <p></p>
     </div>
 </div>
 

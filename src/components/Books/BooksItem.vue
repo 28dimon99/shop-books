@@ -1,26 +1,22 @@
 <template>
-    <div class="books">
+    <div class="books-items">
         <div class="card">
             <div class="card-image">
-                <img :src="books_item.image">
-
+                <img :src=" books_item.image" alt="img">
             </div>
-
             <div class="card-action">
                 <strong>{{books_item.autor}}</strong>
             </div>
 
-            <div class="card-content yellow lighten-4">
+            <div class="card-content lime lighten-4">
                 {{books_item.name}}
             </div>
             <div>
                 Ціна: {{books_item.price}} грн
             </div>
 
-            <div>
-                <button @click="addToCart">Купити</button>
-
-
+            <div class="books_buttons">
+              <a class="waves-effect waves-light btn" @click="addToCart">Купити</a>
             </div>
             <router-view/>
 
@@ -48,5 +44,25 @@
 </script>
 
 <style scoped>
-
+     .books-items{
+       display: grid;
+       width: 205px;
+       height: 500px;
+       padding: 1em;
+     }
+  /*  .card-image{
+      width: 200px;
+      height: 300px;
+      overflow: auto;
+    }*/
+    .card-action{
+      display: grid;
+    }
+     .card-content{
+       display: grid;
+     }
+    .books_buttons{
+      display: grid;
+      align-items: end;
+    }
 </style>

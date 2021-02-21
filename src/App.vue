@@ -1,14 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+      <Wrapper/>
   </div>
 </template>
+<script>
+
+import Wrapper from "./components/Wrapper";
+
+
+export default {
+  name:'app',
+  components:{
+      Wrapper
+  }
+}
+</script>
 
 <style lang="scss">
+  @import "~materialize-css/dist/css/materialize.min.css";
+  *{
+    margin: 0;
+    padding: 0;
+  }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,30 +1,27 @@
 <template>
     <div class="cart-item">
+      <div class="cart-img">
         <img :src="cart_data_items.image">
+      </div>
         <div class="card-item-autor">
             <strong>{{cart_data_items.autor}}</strong>
         </div>
 
-        <div class="cart-item-content yellow lighten-4">
+        <div class="cart-item-content  green lighten-4">
             {{cart_data_items.name}}
         </div>
         <div class="cart-item-price">
             Ціна: {{cart_data_items.price}} грн
         </div>
         <div class="cart-item-quantity">
-            <p>Количество книг</p>
+            <p>Кількість книг</p>
           <span>
           <span @click="decrementItem">-</span>
              {{cart_data_items.quantity}}
             <span @click="incrementItem">+</span>
         </span>
-
         </div>
-
-
-
-
-        <button @click="removeBooks">Видалити</button>
+      <a class="waves-effect waves-light btn red" @click="removeBooks">Видалити</a>
     </div>
 </template>
 
@@ -60,7 +57,17 @@
 <style scoped>
     .cart-item{
         display: grid;
-        grid-column: auto;
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 20px;
+        justify-items: stretch;
+        align-items: center;
+        background-color:#2c3e50;
+        color: white;
+        padding: 1em;
+        cursor: pointer;
         border: 1px solid black;
+    }
+    .cart-img{
+
     }
 </style>
