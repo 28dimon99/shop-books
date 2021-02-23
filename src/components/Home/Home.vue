@@ -165,6 +165,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+
 }
 .widget{
   display: grid;

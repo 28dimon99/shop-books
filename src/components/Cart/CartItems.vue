@@ -7,7 +7,7 @@
             <strong>{{cart_data_items.autor}}</strong>
         </div>
 
-        <div class="cart-item-content  green lighten-4">
+        <div class="cart-item-content">
             {{cart_data_items.name}}
         </div>
         <div class="cart-item-price">

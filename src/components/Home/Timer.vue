@@ -1,44 +1,45 @@
 <template>
+  <div class="timer-main">
+      <div class="days-stock">
+        <h4>До кінця Акції</h4>
+    </div>
     <div class="timer">
 
-            <div class="days  time">
-                {{displayDay}}
-                <div class="text-days">Днів</div>
-            </div>
+      <div class="days  time">
+        {{displayDay}}
+        <div class="text-days">Днів</div>
+      </div>
 
-        <div >
-            <span class="leading-snug">:</span>
-        </div>
+      <div >
+        <span class="leading-snug">:</span>
+      </div>
 
-            <div class="hours time">
-                {{displayHours}}
-                <div class="text-hours">Годин</div>
-            </div>
+      <div class="hours time">
+        {{displayHours}}
+        <div class="text-hours">Годин</div>
+      </div>
 
-        <div>
-            <span class="leading-snug">:</span>
-        </div>
+      <div>
+        <span class="leading-snug">:</span>
+      </div>
 
-            <div class="minutes time">
-                {{displayMinutes}}
-                <div class="text-minutes">Хвилин</div>
-            </div>
+      <div class="minutes time">
+        {{displayMinutes}}
+        <div class="text-minutes">Хвилин</div>
+      </div>
 
-        <div>
-            <span class="leading-snug">:</span>
-        </div>
+      <div>
+        <span class="leading-snug">:</span>
+      </div>
 
-            <div class="seconds time">
-                {{displaySeconds}}
-                <div class="label text-seconds">Секунд</div>
-            </div>
-
-        <div class="days-stock">
-            <h4>До кінця Акції</h4>
-        </div>
-
+      <div class="seconds time">
+        {{displaySeconds}}
+        <div class="label text-seconds">Секунд</div>
+      </div>
 
     </div>
+  </div>
+
 
 
 </template>
@@ -108,11 +109,20 @@
 </script>
 
 <style scoped>
+    .timer-main{
+      display: grid;
+      justify-items: center;
+      border: 2px solid black;
+      margin-bottom: 20px;
+      background-color:#2c3e50;
+      color: white;
+    }
     .timer{
         display: grid;
         width: 450px;
-        height: 250px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 180px;
+        grid-template-columns: repeat(7, 1fr);
+        justify-items: center;
     }
     .time{
         width: 120px;
@@ -120,18 +130,22 @@
         text-align: center;
         font-size: 30px;
         font-weight: bold;
-        font-family: "Times New Roman";
         border-radius: 15px;
         border: 2px solid black;
         color:white;
         background-color: rgba(0,0,0,0.87);
+
     }
     .leading-snug{
         font-size: 50px;
     }
     .days-stock{
-        display: grid;
-        grid-template-rows: 1fr;
+      display: grid;
+      padding: 3px;
+      grid-auto-columns: 1fr;
+
+
+
 
     }
 

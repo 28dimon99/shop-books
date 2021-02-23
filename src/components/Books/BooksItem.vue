@@ -8,7 +8,7 @@
                 <strong>{{books_item.autor}}</strong>
             </div>
 
-            <div class="card-content lime lighten-4">
+            <div class="card-content">
                 {{books_item.name}}
             </div>
             <div>

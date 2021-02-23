@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="main-carusel">
     <div class="carousel" @keydown="checkSlide($event)" tabindex="0">
         <button @click.prevent="next" class="btn btn-next"><i class="material-icons chevron_left">chevron_left</i></button>
         <slot>
@@ -7,8 +7,12 @@
         <button @click.prevent="prev" class="btn btn-prev"><i class="material-icons chevron_right">chevron_right</i></button>
     </div>
     <div class="sidebar">
-        <p></p>
+      <p>
+        Найкращий подарунок – це можливість вибору. Довірте вибір одержувачу подарунка. Подарунковий сертифікат Yakaboo.ua у вигляді пластикової карти або електронного сертифікату — це попередній платіж, який дає можливість купувати будь-які товари магазину, на суму еквівалентну його номіналу. Переваги купівлі сертифікатів у нашому магазині Yakaboo.ua — найбільший в Україні книжковий інтернет-магазин, який налічує понад 300 000 книг 71 мовою, включаючи найостанніші новинки і світові бестселери. Книги також доступні в електронному та аудіо форматах. Каталог товарів оновлюється щодня.
+        Ексклюзивне дизайнерське рішення Для корпоративних клієнтів ми пропонуємо спеціальні умови співпраці. Ми можемо розробити унікальні сертифікати, які будуть містити вашу корпоративну стилістику і будь-який бажаний номінал.
+      </p>
     </div>
+
 </div>
 
 
@@ -61,16 +65,21 @@
     }
 </script>
 <style scoped>
-
+    .main-carusel{
+      display: grid;
+      grid-template-columns: 6fr 3fr;
+      justify-items:stretch;
+      margin-bottom: 30px;
+    }
 
     .carousel{
       display: grid;
         width: 830px;
         height: 299px;
+
+
     }
-    .sidebar{
-        display: grid;
-    }
+
   .btn{
       width: 10px;
       height: 30px;
