@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import books from "./module/books";
-import * as axios from "axios";
 import mutations from "@/store/mutations/mutations";
 import actionsCommon from "@/store/actions/actions";
 import actionsRequest from "@/store/actionsRequest/actionsRequest";
@@ -15,6 +13,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    isMobile: false,
+    isDesktop: true,
     books:[],
     cart:[]
   },

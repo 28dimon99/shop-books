@@ -5,7 +5,8 @@
       "autor": "Лоран Гунель",
       "name": "Бог завжди подорожує інкогніто",
       "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/i/m/img293_42.jpg",
-      "price": 145
+      "price": 145,
+      "category": "Новинки"
 
     },
      {
@@ -13,7 +14,8 @@
        "autor": "Елізабет Ґілберт",
        "name": "Місто дівчат",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/i/m/img_0285_1_2.jpg",
-       "price": 180
+       "price": 180,
+       "category": "Популярні"
 
      },
      {
@@ -21,7 +23,8 @@
        "autor": "Джордж Орвелл",
        "name": "1984",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/c/o/cover1__w600_1__120.jpg",
-       "price": 120
+       "price": 120,
+       "category": "Новинки"
 
      },
      {
@@ -29,7 +32,8 @@
        "autor": "Роберт Ґалбрейт",
        "name": "Дурная кровь",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/7/f/7f96e4a674677aca7fe908425c8605ac.jpg",
-       "price": 300
+       "price": 300,
+       "category": "Популярні"
 
      },
      {
@@ -37,7 +41,8 @@
        "autor": "Фредрік Бакман",
        "name": "Чоловік на ім'я Уве",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/c/o/cover_176_691_1.jpg",
-       "price": 220
+       "price": 220,
+       "category": "Новинки"
 
      },
      {
@@ -45,14 +50,16 @@
        "autor": "Шон Байтелл",
        "name": "Дневник книготорговца",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/9/7/9785389150133_3000jpg_1.jpg",
-       "price": 200
+       "price": 200,
+       "category": "Популярні"
      },
      {
        "id": 6,
        "autor": "Грегорі Девід Робертс",
        "name": "Шантарам",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/1/0/10335609_0.jpg",
-       "price": 160
+       "price": 160,
+       "category": "Новинки"
 
      },
      {
@@ -60,7 +67,8 @@
        "autor": "Деніел Кіз",
        "name": "Квіти для Елджернона",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/i/m/img_15840.jpg",
-       "price": 145
+       "price": 145,
+       "category": "Популярні"
 
      },
      {
@@ -68,7 +76,8 @@
        "autor": "Луїза Мей Олкотт",
        "name": "Маленькие женщины",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/9/7/9785389172258_3000_1.jpg",
-       "price": 55
+       "price": 55,
+       "category": "Новинки"
 
      },
      {
@@ -76,7 +85,8 @@
        "autor": "Всеволод Нестайко",
        "name": "Тореадори з Васюківки",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/i/m/img570_cr_3.jpg",
-       "price": 140
+       "price": 140,
+       "category": "Популярні"
 
      },
      {
@@ -84,7 +94,8 @@
        "autor": "Олдос Хакслі",
        "name": "О дивный новый мир",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/c/o/cover1__w600_1__119_39.jpg",
-       "price": 125
+       "price": 125,
+       "category": "Новинки"
 
      },
      {
@@ -92,7 +103,8 @@
        "autor": "Джон Маррс",
        "name": "The One. Единственный",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/i/m/img_23873.jpg",
-       "price": 223
+       "price": 223,
+       "category": "Популярні"
 
      },
      {
@@ -100,7 +112,8 @@
        "autor": "Роальд Дал",
        "name": "Чарлі і шоколадна фабрика",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/5/3/53225_28767120.jpg",
-       "price": 140
+       "price": 140,
+       "category": "Новинки"
 
      },
      {
@@ -108,7 +121,8 @@
        "autor": "Елізабет Ґілберт",
        "name": "Їсти, молитися, кохати",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/i/s/istu_molutus_kohatu_0.png",
-       "price": 139
+       "price": 139,
+       "category": "Популярні"
 
      },
      {
@@ -116,7 +130,8 @@
        "autor": "Джон П. Стрелекі",
        "name": "Повернення до кафе на краю світу",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/i/m/img_5114_2.jpg",
-       "price": 150
+       "price": 150,
+       "category": "Новинки"
 
      },
      {
@@ -124,7 +139,8 @@
        "autor": "Елізабет Ґілберт",
        "name": "Город женщин",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/i/m/img_1071_5.jpg",
-       "price": 260
+       "price": 260,
+       "category": "Популярні"
 
      },
      {
@@ -132,7 +148,8 @@
        "autor": "Фредрік Бакман",
        "name": "Ведмеже місто",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/1/3/132513516.jpeg",
-       "price": 250
+       "price": 250,
+       "category": "Новинки"
 
      },
      {
@@ -140,7 +157,8 @@
        "autor": "Айн Ренд",
        "name": "Атлант расправил плечи",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/1/6/1695e2d6ed5345d1e988e6971703afd0.jpg",
-       "price": 670
+       "price": 670,
+       "category": "Популярні"
 
      },
      {
@@ -148,7 +166,8 @@
        "autor": "Фредрік Бакмань",
        "name": "Ми проти вас",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/i/m/img_7555_1.jpg",
-       "price": 261
+       "price": 261,
+       "category": "Новинки"
 
      },
      {
@@ -156,7 +175,8 @@
        "autor": "Мюріель Барбері",
        "name": "Элегантность ежика",
        "image": "https://img.yakaboo.ua/media/catalog/product/cache/1/small_image/140x210/9df78eab33525d08d6e5fb8d27136e95/4/3/439794_73336098.jpg",
-       "price": 160
+       "price": 160,
+       "category": "Популярні"
 
      }
    ]
