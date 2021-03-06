@@ -3,18 +3,20 @@
     <div class="modal-books">
       <div class="header-modal">
         <span>{{titleModal}}</span>
-        <i @click="closeModalBook"
-           class="material-icons">
-          close
-        </i>
+        <div class="close-modal">
+          <i @click="closeModalBook"
+             class="material-icons">
+            close
+          </i>
+        </div>
+
       </div>
       <div class="content-modal">
         <slot></slot>
       </div>
       <div class="footer-modal">
-        <button @click="closeModalBook">Закрити</button>
-
-        <button @click="addCartModal">{{btnModal}}</button>
+        <a class="waves-effect waves-light btn" @click="addCartModal">{{btnModal}}</a>
+        <a class="waves-effect waves-light btn red" @click="closeModalBook">Закрити</a>
 
       </div>
     </div>
@@ -60,12 +62,17 @@ name: "BookModal",
 <style scoped>
 .wrap-modal{
   display: grid;
-  background: rgba(64,64,64,0.4);
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  line-height: 100%;
+  background: rgba(64,64,64,0.7);
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
+  z-index:10;
   right: 0;
-  left: 0;
+  left:0;
   top: 0;
   bottom: 0;
 
@@ -73,14 +80,34 @@ name: "BookModal",
    .modal-books{
      display: grid;
      position: fixed;
-     top: 50px;
-     left: 500px;
+     top: 100px;
+     left: 450px;
      background-color:#e3f2fd;
-     z-index:10 ;
+     z-index:10;
      box-shadow: 0 0 17px 0 #e7e7e7;
      grid-template-columns: 1fr;
-     width: 400px;
-
+     width: 500px;
      border: 1px solid black;
+   }
+   .header-modal{
+     padding-top: 20px;
+     font-size: 2em;
+   }
+   .content-modal{
+     display: grid;
+     padding: 15px;
+
+   }
+   .close-modal{
+     position: absolute;
+     top:0;
+     right: 0;
+     background-color: red;
+     color: white;
+   }
+   .footer-modal{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-content: end;
    }
 </style>

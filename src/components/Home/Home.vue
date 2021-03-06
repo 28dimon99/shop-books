@@ -159,6 +159,7 @@ export default {
 .home{
   display: grid;
   padding: 20px;
+  margin-top: 50px;
 
 }
 .discont{

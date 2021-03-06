@@ -87,6 +87,7 @@ export default {
 <style scoped>
 .cart {
   display: grid;
+
   grid-template-columns: 1fr;
   border: 1px solid black;
 }
@@ -103,7 +104,8 @@ export default {
   padding: 1em;
   width: 100px;
   height: 65px ;
-  position: absolute;
+  position: fixed;
+  z-index: 10;
   top:0;
   right:0;
 }

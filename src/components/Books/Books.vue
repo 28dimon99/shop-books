@@ -3,7 +3,7 @@
     <router-link
         :to="{name:'Cart', params:{cart_data: CART}}"
     >
-      <div class="books_link_cart">
+      <div class="books-link-cart">
         {{ CART.length }}
         <i
             class="material-icons">
@@ -18,7 +18,7 @@
           :options="options"
           :selected="selected"
           @select="sortByBooks"
-          :isExpanded = "IS_DESKTOP"
+          :isExpanded="IS_DESKTOP"
       />
       <div class="range-slider">
         <input
@@ -38,8 +38,8 @@
             @change="setRangeSlider"
         >
         <div class="range-prices">
-          <p>Min: {{minPrice}}</p>
-          <p>Max: {{maxPrice}}</p>
+          <p>Min: {{ minPrice }}</p>
+          <p>Max: {{ maxPrice }}</p>
         </div>
 
       </div>
@@ -93,7 +93,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['BOOKS', 'CART', 'IS_MOBILE', 'IS_DESKTOP']),
+    ...mapGetters(['BOOKS', 'CART', 'IS_MOBILE', 'IS_DESKTOP', 'SEARCH_VALUE']),
 
     filteredBooks() {
       if (this.sortedCategory.length) {
@@ -106,6 +106,8 @@ export default {
   },
   methods: {
     ...mapActions(["GET_BOOKS_FROM_API", "ADD_TO_CART"]),
+
+
     addToCart(data) {
       console.log(data)
       this.ADD_TO_CART(data)
@@ -113,32 +115,58 @@ export default {
     sortByBooks(category) {
       let vm = this
       this.sortedCategory = [...this.BOOKS]
-      this.sortedCategory = this.sortedCategory.filter(function (item){
+      this.sortedCategory = this.sortedCategory.filter(function (item) {
         return item.price >= vm.minPrice && item.price <= vm.maxPrice
       })
-      if (category){
-        this.sortedCategory = this.sortedCategory.filter(function (i){
+      if (category) {
+        this.sortedCategory = this.sortedCategory.filter(function (i) {
           vm.selected === category.name
           return i.category === category.name
         })
       }
     },
-    setRangeSlider(){
-      if(this.minPrice > this.maxPrice){
+    setRangeSlider() {
+      if (this.minPrice > this.maxPrice) {
         let tmp = this.maxPrice
         this.maxPrice = this.minPrice
         this.minPrice = tmp
       }
       this.sortByBooks()
+    },
+    sortProductsBySearchValue(value) {
+      this.sortedCategory = [...this.BOOKS]
+      if (value) {
+        this.sortedCategory = this.sortedCategory.filter(function (item) {
+          return item.name.toLowerCase().includes(value.toLowerCase)
+        })
+      } else {
+        this.sortedCategory = this.BOOKS
+      }
+    }
+
+  },
+  watch: {
+    //Следим за значением когда оно меняется
+    SEARCH_VALUE() {
+      this.sortProductsBySearchValue(this.SEARCH_VALUE)
+
     }
   },
   components: {BooksItem, SelectBooks},
   mounted() {
     //вызов actions
-    this.GET_BOOKS_FROM_API();
+    this.GET_BOOKS_FROM_API()
+    .then((response) => {
+      if (response.data) {
+        this.sortByBooks()
+        this.sortProductsBySearchValue(this.SEARCH_VALUE)
+      }
+
+    })
 
   }
-};
+
+}
 </script>
 
 <style scoped>
@@ -153,23 +181,28 @@ export default {
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 100px;
+  grid-column-gap: 150px;
+  grid-row-gap: 50px;
 
 }
 
-.books_link_cart {
+.books-link-cart {
   display: grid;
+  position: fixed;
+  z-index: 10;
   color: white;
   list-style: none;
   width: 200px;
-  position: absolute;
-  top: 0;
   right: 0;
+  top: 0;
 
 }
-.filter{
+
+.filter {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding-left: 50px;
+  padding-right: 30px;
+  grid-template-columns: 9fr 2fr;
 }
 
 .range-slider {
@@ -192,7 +225,8 @@ input[type=range]::-webkit-slider-thumb {
   top: 2px;
   margin-top: -7px;
 }
-.range-prices{
+
+.range-prices {
   padding-top: 20px;
   padding-bottom: 20px;
 }

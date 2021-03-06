@@ -57,7 +57,7 @@
 <script>
 
 
-    import BookModal from "@/components/BookModals/BookModal";
+    import BookModal from "@/components/Books/BookModals/BookModal";
 
     export default {
       name: "BooksItem",
@@ -99,8 +99,8 @@
      .books-items{
        display: grid;
        width: 205px;
-       height: 500px;
        padding: 1em;
+       align-items: end;
      }
     .card-action{
       display: grid;
@@ -110,6 +110,6 @@
      }
     .books_buttons{
       display: grid;
-      align-items: end;
+
     }
 </style>
