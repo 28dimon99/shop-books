@@ -13,6 +13,7 @@
 
     </router-link>
     <h1>КНИГИ</h1>
+    <hr>
     <div class="filter">
       <SelectBooks
           :options="options"
@@ -181,7 +182,7 @@ export default {
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 150px;
+  grid-column-gap: 100px;
   grid-row-gap: 50px;
 
 }
@@ -203,6 +204,7 @@ export default {
   padding-left: 50px;
   padding-right: 30px;
   grid-template-columns: 9fr 2fr;
+  margin-bottom: 50px;
 }
 
 .range-slider {

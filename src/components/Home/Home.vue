@@ -21,7 +21,7 @@
 
     </carusel>
     <div class="widget">
-      <div>
+      <div class="item">
         <img src="../../assets/image/home/1.png" alt="">
         <div>
           <h5>Знижки до Дня книгодарування</h5>
@@ -30,7 +30,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="item">
         <img src="../../assets/image/home/2.png" alt="">
         <div>
           <h5>Найкращі книжки 2020 року!</h5>
@@ -39,7 +39,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="item">
         <img src="../../assets/image/home/3.png" alt="">
         <div>
           <h5>Е-видавництво тижня! </h5>
@@ -49,7 +49,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="item">
         <img src="../../assets/image/home/4.png" alt="">
         <div>
           <h5>Читайте сучасників разом із дітьми</h5>
@@ -58,7 +58,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="item">
         <img src="../../assets/image/home/5.png" alt="">
         <div>
           <h5>Книжки-переможці Нобелівської премії з літератури</h5>
@@ -69,7 +69,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="item">
         <img src="../../assets/image/home/6.png" alt="">
         <div>
           <h5>Книжки-переможці Пулітцерівської премії</h5>
@@ -79,7 +79,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="item">
         <img src="../../assets/image/home/7.png" alt="">
         <div>
           <h5>Книжки-переможці Букерівської премії</h5>
@@ -88,7 +88,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="item">
         <img src="../../assets/image/home/8.png" alt="">
         <div>
           <h5>Зимовий розпродаж від #книголав</h5>
@@ -165,12 +165,18 @@ export default {
 .discont{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-
+  grid-gap: 5px;
 }
 .widget{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 5px;
+}
+.item{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid silver;
+  border-radius: 5px;
 }
 </style>

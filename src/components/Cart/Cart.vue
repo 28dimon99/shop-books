@@ -87,9 +87,8 @@ export default {
 <style scoped>
 .cart {
   display: grid;
-
+  margin-top: 70px;
   grid-template-columns: 1fr;
-  border: 1px solid black;
 }
 .total{
   display: grid;

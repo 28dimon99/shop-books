@@ -99,6 +99,7 @@
      .books-items{
        display: grid;
        width: 205px;
+       overflow: hidden;
        padding: 1em;
        align-items: end;
      }
